@@ -1,7 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import PropertyGrid from '../components/PropertyGrid';
-import Testimonials from '../components/Testimonials';
 import { properties, testimonials } from '../data/properties';
 import { CheckCircle, Home as HomeIcon, Users, Clock, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -144,8 +143,6 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </section>
-      
-      <Testimonials testimonials={testimonials} />
       
       <section className="py-16 bg-accent-50">
         <div className="container-custom text-center">

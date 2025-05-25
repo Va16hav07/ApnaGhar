@@ -31,64 +31,6 @@ const Hero: React.FC = () => {
               <p className="text-gray-700 text-lg mb-2">Pay 50% Less Brokerage - By Students, For Students</p>
               <p className="text-gray-600">PGs, Hostels, and Flats near your campus</p>
             </div>
-            
-            <form onSubmit={handleSearch} className="relative">
-              <div className="flex flex-col md:flex-row items-center gap-4">
-                <div className="relative flex-grow">
-                  <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
-                  <input
-                    type="text"
-                    className="input pl-10"
-                    placeholder="Search by area, landmark or property name"
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                  />
-                </div>
-                <button 
-                  type="submit" 
-                  className="btn-primary py-3 w-full md:w-auto whitespace-nowrap"
-                >
-                  <Search size={18} className="mr-2" />
-                  Find Properties
-                </button>
-              </div>
-            </form>
-            
-            <div className="mt-6 pt-6 border-t border-gray-200">
-              <p className="text-gray-600 font-medium">Popular Searches:</p>
-              <div className="flex flex-wrap gap-2 mt-2 justify-center">
-                <button 
-                  className="px-3 py-1 bg-gray-100 hover:bg-primary-50 text-gray-700 rounded-full text-sm"
-                  onClick={() => navigate('/properties?type=PG')}
-                >
-                  PGs
-                </button>
-                <button 
-                  className="px-3 py-1 bg-gray-100 hover:bg-primary-50 text-gray-700 rounded-full text-sm"
-                  onClick={() => navigate('/properties?type=Hostel')}
-                >
-                  Hostels
-                </button>
-                <button 
-                  className="px-3 py-1 bg-gray-100 hover:bg-primary-50 text-gray-700 rounded-full text-sm"
-                  onClick={() => navigate('/properties?type=Flat')}
-                >
-                  Flats
-                </button>
-                <button 
-                  className="px-3 py-1 bg-gray-100 hover:bg-primary-50 text-gray-700 rounded-full text-sm"
-                  onClick={() => navigate('/properties?gender=Female')}
-                >
-                  Girls Accommodation
-                </button>
-                <button 
-                  className="px-3 py-1 bg-gray-100 hover:bg-primary-50 text-gray-700 rounded-full text-sm"
-                  onClick={() => navigate('/properties?gender=Male')}
-                >
-                  Boys Accommodation
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </div>

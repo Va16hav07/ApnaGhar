@@ -60,22 +60,12 @@ const Header: React.FC = () => {
               Properties
             </Link>
             <Link 
-              to="/about" 
-              className={`text-sm font-medium transition-colors ${isActive('/about') ? 'text-primary-700' : 'text-gray-600 hover:text-primary-700'}`}
-            >
-              About
-            </Link>
-            <Link 
               to="/contact" 
               className={`text-sm font-medium transition-colors ${isActive('/contact') ? 'text-primary-700' : 'text-gray-600 hover:text-primary-700'}`}
             >
               Contact
             </Link>
           </nav>
-          
-          <button className="btn-accent">
-            List Property
-          </button>
         </div>
 
         <button 
