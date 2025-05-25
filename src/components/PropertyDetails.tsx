@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MapPin, Bed, Bath, Square as SquareFoot, Calendar, Tag, User, Phone, Mail, ArrowLeft, ArrowRight } from 'lucide-react';
+import { MapPin, Bed, Bath, Square as SquareFoot, Tag, User, ArrowLeft, ArrowRight, Mail } from 'lucide-react';
 import { Property } from '../types';
 import ContactForm from './ContactForm';
 
@@ -66,7 +66,7 @@ const PropertyDetails: React.FC<PropertyDetailsProps> = ({ property }) => {
           <div className="mb-8">
             <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
               <h1 className="text-3xl font-bold text-gray-900">{property.title}</h1>
-              <p className="text-2xl font-bold text-accent-600">₹{property.price.toLocaleString()}/month</p>
+              <p className="text-2xl font-bold text-accent-600">₹{property.price}</p>
             </div>
             
             <div className="flex items-center text-gray-600 mb-4">
@@ -134,10 +134,6 @@ const PropertyDetails: React.FC<PropertyDetailsProps> = ({ property }) => {
             
             <div className="mt-6 pt-6 border-t border-gray-100">
               <p className="text-gray-600 text-sm mb-4">You can also reach us directly:</p>
-              <div className="flex items-center mb-3">
-                <Phone size={18} className="text-primary-700 mr-2" />
-                <a href="tel:+919876543210" className="text-primary-700 hover:underline">+91 98765 43210</a>
-              </div>
               <div className="flex items-center">
                 <Mail size={18} className="text-primary-700 mr-2" />
                 <a href="mailto:contact@Apna Ghar.in" className="text-primary-700 hover:underline">contact@Apna Ghar.in</a>

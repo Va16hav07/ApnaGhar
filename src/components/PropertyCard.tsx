@@ -12,12 +12,12 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property, featured = false 
   return (
     <div 
       className={`card card-hover group animate-fade-in ${
-        featured 
+        featured || property.featured
           ? 'border-2 border-accent-400' 
           : 'border border-gray-200'
       }`}
     >
-      {featured && (
+      {(featured || property.featured) && (
         <div className="absolute top-3 left-3 z-10 bg-accent-400 text-white px-3 py-1 rounded-full text-xs font-medium">
           Featured
         </div>
@@ -43,7 +43,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property, featured = false 
           <h3 className="text-lg font-semibold text-gray-900 hover:text-primary-700 transition-colors">
             {property.title}
           </h3>
-          <p className="text-accent-600 font-bold">₹{property.price.toLocaleString()}/mo</p>
+          <p className="text-accent-600 font-bold">₹{property.price}</p>
         </div>
         
         <div className="flex items-center text-gray-500 text-sm mt-2">
@@ -66,7 +66,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property, featured = false 
           </div>
           <div className="flex items-center">
             <SquareFoot size={16} className="mr-1" />
-            <span>{property.area} sq.ft</span>
+            <span>{property.area}</span>
           </div>
         </div>
         

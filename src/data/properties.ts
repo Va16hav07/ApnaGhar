@@ -3,114 +3,89 @@ import { Property, TestimonialType } from '../types';
 export const properties: Property[] = [
   {
     id: '1',
-    title: 'Sunshine PG for Boys',
-    type: 'PG',
-    description: 'Modern PG accommodation with spacious rooms and all essential amenities. Located in a quiet neighborhood close to D Y Patil campus. Features high-speed internet, power backup, and common recreation area.',
-    price: 8500,
-    address: '123 College Road, Near Main Gate, Pune',
-    distance: '0.5 km from campus',
-    amenities: ['WiFi', 'Power Backup', 'Laundry', 'Meals', 'Security', 'Study Table'],
+    title: ' Society : Palaash Sadaphuli',
+    type: 'Flat',
+    description: 'Spacious 2BHK apartment.',
+    price: '11000 including Maintenance',
+    address: 'Varale, Talegaon Dabade, Pune',
+    distance: '1.5 km from campus',
+     amenities: ['Parking', "It is a Semifernished Flat"],
     images: [
-      'https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg',
-      'https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg'
+      'https://ucarecdn.com/3df08c78-00c3-45d3-b645-cdfcb51ec0bd/WhatsAppImage20250525at75936PM.jpeg',
+      'https://ucarecdn.com/c9c6ab5d-9d1c-4501-a5f5-7b0b69635f70/WhatsAppImage20250525at75937PM1.jpeg',
+      'https://ucarecdn.com/8ad94dd8-35a5-4b01-b845-ef5d0c5086d3/WhatsAppImage20250525at75938PM1.jpeg',
+      'https://ucarecdn.com/57d3d671-6432-4ae0-8ea6-5af183ab8dbd/WhatsAppImage20250525at75937PM.jpeg',
+      'https://ucarecdn.com/b3ea75bf-2b52-4f7c-be8f-8e45713f8e0f/WhatsAppImage20250525at75938PM.jpeg',
+      'https://ucarecdn.com/f1bd6e2d-8c7d-468c-af21-9cdabc965dd3/WhatsAppImage20250525at75935PM.jpeg'
     ],
-    featured: true,
     rooms: 1,
-    bathrooms: 1,
-    area: 150,
-    gender: 'Male'
+    bathrooms: 2,
+    area: '2BHK',
+    gender: 'Any',
+    featured: true
   },
   {
     id: '2',
-    title: 'Girls Hostel Complex',
-    type: 'Hostel',
-    description: 'Safe and secure hostel for female students with 24/7 security. Features comfortable beds, study areas, and common dining. Regular cleaning service included.',
-    price: 7500,
-    address: '45 University Lane, East Campus, Pune',
-    distance: '0.8 km from campus',
-    amenities: ['WiFi', 'Security', 'Meals', 'Cleaning', 'Common Room', 'Hot Water'],
+    title: ' Society : Palaash Sadaphuli',
+    type: 'Flat',
+    description: 'Spacious 2BHK apartment.',
+    price: '12000 including Maintenance',
+    address: 'Varale, Talegaon Dabade, Pune',
+    distance: '1.5 km from dy patil college',
+     amenities: ['Parking', "It is a Semifernished Flat"],
     images: [
-      'https://images.pexels.com/photos/271743/pexels-photo-271743.jpeg',
-      'https://images.pexels.com/photos/439227/pexels-photo-439227.jpeg'
+      'https://ucarecdn.com/3df08c78-00c3-45d3-b645-cdfcb51ec0bd/WhatsAppImage20250525at75936PM.jpeg',
+      'https://ucarecdn.com/c9c6ab5d-9d1c-4501-a5f5-7b0b69635f70/WhatsAppImage20250525at75937PM1.jpeg',
+      'https://ucarecdn.com/8ad94dd8-35a5-4b01-b845-ef5d0c5086d3/WhatsAppImage20250525at75938PM1.jpeg',
+      'https://ucarecdn.com/57d3d671-6432-4ae0-8ea6-5af183ab8dbd/WhatsAppImage20250525at75937PM.jpeg',
+      'https://ucarecdn.com/b3ea75bf-2b52-4f7c-be8f-8e45713f8e0f/WhatsAppImage20250525at75938PM.jpeg',
+      'https://ucarecdn.com/f1bd6e2d-8c7d-468c-af21-9cdabc965dd3/WhatsAppImage20250525at75935PM.jpeg'
     ],
-    featured: true,
     rooms: 1,
-    bathrooms: 1,
-    area: 120,
-    gender: 'Female'
+    bathrooms: 2,
+    area: '2BHK',
+    gender: 'Any',
+    featured: false
   },
   {
     id: '3',
-    title: 'College View Apartment',
+    title: 'Rio Vista society ',
     type: 'Flat',
-    description: 'Spacious 2BHK apartment perfect for sharing. Recently renovated with modern furnishings and a fully equipped kitchen. Walking distance to campus.',
-    price: 15000,
-    address: '78 Scholar Avenue, West Block, Pune',
-    distance: '1.2 km from campus',
-    amenities: ['Furnished', 'Kitchen', 'Balcony', 'Parking', 'Security', 'WiFi Ready'],
+    description: 'Spacious 2BHK apartment.',
+    price: '12000 including Maintenance',
+    address: 'near DY patil College of engineering Opposite to Eco city, varale , Talegaon dabhade, Pune',
+    distance: '500m from campus',
+    amenities: ['Parking', "It is a Semifernished Flat"],
     images: [
-      'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg',
-      'https://images.pexels.com/photos/1918291/pexels-photo-1918291.jpeg'
+      'https://ucarecdn.com/7921f14d-3e19-4e3b-9fc1-90d77f8e4fb8/WhatsAppImage20250525at80233PM.jpeg',
+      'https://ucarecdn.com/15591976-912b-4ce8-a5e9-659deb07f82c/WhatsAppImage20250525at80234PM1.jpeg',
+      'https://ucarecdn.com/739e6804-e9c2-482b-ad95-1f9c858eec02/WhatsAppImage20250525at80234PM.jpeg'
     ],
-    rooms: 2,
+    rooms: 1,
     bathrooms: 2,
-    area: 850,
-    gender: 'Any'
+    area: '2BHK',
+    gender: 'Any',
+    featured: true
   },
   {
     id: '4',
-    title: 'Student Haven PG',
-    type: 'PG',
-    description: 'Comfortable PG accommodation with all basic amenities. Clean and well-maintained rooms with daily housekeeping services.',
-    price: 7000,
-    address: '15 Campus Corner, South Wing, Pune',
-    distance: '0.7 km from campus',
-    amenities: ['WiFi', 'Meals', 'Cleaning', 'TV Room', 'Laundry'],
-    images: [
-      'https://images.pexels.com/photos/1669799/pexels-photo-1669799.jpeg',
-      'https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg'
-    ],
-    rooms: 1,
-    bathrooms: 1,
-    area: 130,
-    gender: 'Any'
-  },
-  {
-    id: '5',
-    title: 'Scholar\'s Residence',
-    type: 'Hostel',
-    description: 'Premium hostel facility with air-conditioned rooms and private bathrooms. Features dedicated study halls and recreation areas.',
-    price: 10000,
-    address: '92 Academic Street, East Block, Pune',
-    distance: '1.5 km from campus',
-    amenities: ['AC', 'Private Bathroom', 'WiFi', 'Study Hall', 'Gym', 'Cafeteria'],
-    images: [
-      'https://images.pexels.com/photos/275484/pexels-photo-275484.jpeg',
-      'https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg'
-    ],
-    featured: true,
-    rooms: 1,
-    bathrooms: 1,
-    area: 200,
-    gender: 'Male'
-  },
-  {
-    id: '6',
-    title: 'Campus Edge 3BHK',
+    title: 'Happy city PG',
     type: 'Flat',
-    description: 'Spacious 3BHK apartment ideal for group of friends. Fully furnished with modern amenities and a large balcony overlooking the park.',
-    price: 22000,
-    address: '34 University Heights, North Gate, Pune',
-    distance: '1.0 km from campus',
-    amenities: ['Fully Furnished', 'Modular Kitchen', 'Balcony', 'Power Backup', 'Lift', 'Parking'],
+    description: 'Comfortable PG accommodation with all basic amenities. Clean and well-maintained rooms with daily housekeeping services.',
+    price: '13000 including Maintenance',
+    address: 'near varale fata, talegaon dabhade, Pune',
+    distance: '1 km from campus',
+    amenities: ['Parking', "It is a Semifernished Flat"],
     images: [
-      'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
-      'https://images.pexels.com/photos/1743227/pexels-photo-1743227.jpeg'
+      'https://ucarecdn.com/24523aaf-5c04-45e5-bc82-12b35aa7623b/WhatsAppImage20250525at80518PM.jpeg',
+      'https://ucarecdn.com/865c6457-3df5-4804-b20a-5111f5aef4e7/WhatsAppImage20250525at80517PM.jpeg',
+      'https://ucarecdn.com/8ae47558-74e8-4232-9491-2a3b443e0de6/WhatsAppImage20250525at80516PM.jpeg'
     ],
-    rooms: 3,
+    rooms: 1,
     bathrooms: 2,
-    area: 1200,
-    gender: 'Any'
+    area: '2BHK',
+    gender: 'Any',
+    featured: true
   }
 ];
 

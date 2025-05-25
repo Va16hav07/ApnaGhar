@@ -1,10 +1,15 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import './index.css';
+import { initEmailJS } from './utils/emailService.ts';
+import { EMAIL_CONFIG } from './constants/config.ts';
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
+// Initialize EmailJS with your user ID
+initEmailJS(EMAIL_CONFIG.USER_ID);
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
     <App />
-  </StrictMode>
+  </React.StrictMode>,
 );

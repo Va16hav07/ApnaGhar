@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, Search, Heart, User } from 'lucide-react';
+import { Menu, X, Home } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -100,22 +100,12 @@ const Header: React.FC = () => {
               Properties
             </Link>
             <Link 
-              to="/about" 
-              className={`px-4 py-2 rounded-md ${isActive('/about') ? 'bg-primary-50 text-primary-700' : 'text-gray-600'}`}
-              onClick={() => setIsOpen(false)}
-            >
-              About
-            </Link>
-            <Link 
               to="/contact" 
               className={`px-4 py-2 rounded-md ${isActive('/contact') ? 'bg-primary-50 text-primary-700' : 'text-gray-600'}`}
               onClick={() => setIsOpen(false)}
             >
               Contact
             </Link>
-            <button className="btn-accent w-full">
-              List Property
-            </button>
           </div>
         </div>
       )}

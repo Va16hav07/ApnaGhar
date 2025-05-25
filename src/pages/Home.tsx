@@ -1,13 +1,16 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import PropertyGrid from '../components/PropertyGrid';
+import Testimonials from '../components/Testimonials';
 import { properties, testimonials } from '../data/properties';
-import { CheckCircle, Home as HomeIcon, Users, Clock, MapPin } from 'lucide-react';
+import { CheckCircle, Home as HomeIcon, Users, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const HomePage: React.FC = () => {
-  // Get featured properties
-  const featuredProperties = properties.filter(property => property.featured);
+  // Get featured properties or use first 3 if none are marked as featured
+  const featuredProperties = properties.filter(property => property.featured).length > 0 
+    ? properties.filter(property => property.featured)
+    : properties.slice(0, 3);
   
   return (
     <div>
@@ -155,6 +158,8 @@ const HomePage: React.FC = () => {
           </Link>
         </div>
       </section>
+      
+      <Testimonials testimonials={testimonials} />
     </div>
   );
 };

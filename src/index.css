@@ -26,26 +26,39 @@
   }
   
   .btn-primary {
-    @apply btn bg-primary-700 text-white hover:bg-primary-800;
+    @apply bg-primary-700 text-white px-4 py-2 rounded-md font-medium hover:bg-primary-800 transition-colors;
   }
   
   .btn-accent {
-    @apply btn bg-accent-400 text-white hover:bg-accent-500;
+    @apply bg-accent-600 text-white px-4 py-2 rounded-md font-medium hover:bg-accent-700 transition-colors;
   }
 
   .card {
-    @apply bg-white rounded-lg shadow-md overflow-hidden transition-all duration-200;
+    @apply bg-white rounded-lg overflow-hidden shadow-md relative;
   }
   
   .card-hover {
-    @apply hover:shadow-lg transform hover:-translate-y-1;
+    @apply transition-all duration-300 hover:shadow-lg;
   }
-  
+
   .input {
-    @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+    @apply w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none;
   }
   
   .select {
     @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

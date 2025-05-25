@@ -1,6 +1,6 @@
-import React, { useState, FormEvent } from 'react';
+import React, { useState, FormEvent, useEffect } from 'react';
 import { User, Mail, Phone, MessageSquare } from 'lucide-react';
-import emailjs from '@emailjs/browser';
+import { sendEmail } from '../utils/emailService';
 
 interface ContactFormProps {
   propertyId?: string;
@@ -32,32 +32,27 @@ const ContactForm: React.FC<ContactFormProps> = ({ propertyId, propertyTitle }) 
     setError('');
     
     try {
-      // This is a placeholder for EmailJS integration
-      // In a real implementation, you would use your service ID, template ID, and public key
-      // await emailjs.send(
-      //   'YOUR_SERVICE_ID',
-      //   'YOUR_TEMPLATE_ID',
-      //   {
-      //     name: formData.name,
-      //     email: formData.email,
-      //     phone: formData.phone,
-      //     message: formData.message,
-      //     property_id: propertyId || 'N/A',
-      //     property_title: propertyTitle || 'N/A'
-      //   },
-      //   'YOUR_PUBLIC_KEY'
-      // );
-      
-      // Simulating email sending for demo purposes
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      setIsSubmitted(true);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        message: '',
+      // Use the sendEmail function from emailService.ts
+      const success = await sendEmail({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
+        propertyId,
+        propertyTitle
       });
+      
+      if (success) {
+        setIsSubmitted(true);
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: '',
+        });
+      } else {
+        setError('Failed to send your message. Please try again later.');
+      }
     } catch (err) {
       console.error('Error sending email:', err);
       setError('Failed to send your message. Please try again later.');
@@ -65,6 +60,16 @@ const ContactForm: React.FC<ContactFormProps> = ({ propertyId, propertyTitle }) 
       setIsSubmitting(false);
     }
   };
+
+  // Reset form if property changes
+  useEffect(() => {
+    if (propertyTitle) {
+      setFormData(prev => ({
+        ...prev,
+        message: `I'm interested in the property: ${propertyTitle} (ID: ${propertyId})`
+      }));
+    }
+  }, [propertyId, propertyTitle]);
 
   if (isSubmitted) {
     return (

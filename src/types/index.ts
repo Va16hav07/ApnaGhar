@@ -1,9 +1,9 @@
 export interface Property {
   id: string;
   title: string;
-  type: 'PG' | 'Hostel' | 'Flat';
+  type: string; // Changed from enum to string to match actual data
   description: string;
-  price: number;
+  price: string; // Changed from number to string to match actual data
   address: string;
   distance: string; // Distance from D Y Patil
   amenities: string[];
@@ -11,7 +11,7 @@ export interface Property {
   featured?: boolean;
   rooms: number;
   bathrooms: number;
-  area: number; // in sq.ft.
+  area: string; // Changed from String to string for consistency
   gender: 'Male' | 'Female' | 'Any';
 }
 
