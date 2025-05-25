@@ -1,15 +1,6 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
 
 const Hero: React.FC = () => {
-  const [searchQuery, setSearchQuery] = useState('');
-  const navigate = useNavigate();
-
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    navigate(`/properties?search=${searchQuery}`);
-  };
-
   return (
     <div className="relative h-[85vh] flex items-center">
       {/* Background Image with Overlay */}

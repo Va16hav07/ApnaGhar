@@ -31,12 +31,6 @@ const Footer: React.FC = () => {
                   Properties
                 </Link>
               </li>
-              
-              <li>
-                <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">
-                  Contact
-                </Link>
-              </li>
             </ul>
           </div>
           
@@ -51,8 +45,8 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="text-accent-400 mr-2 flex-shrink-0" />
-                <a href="mailto:contact@Apna Ghar.in" className="text-gray-400 hover:text-white transition-colors">
-                  contact@Apna Ghar.in
+                <a href="mailto:apnaghardy@gmail.com" className="text-gray-400 hover:text-white transition-colors">
+                  apnaghardy@gmail.com
                 </a>
               </li>
             </ul>

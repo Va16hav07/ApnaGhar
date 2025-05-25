@@ -11,8 +11,8 @@ interface EmailParams {
 }
 
 // Initialize EmailJS with your user ID
-export const initEmailJS = (userId: string): void => {
-  emailjs.init(userId);
+export const initEmailJS = (): void => {
+  emailjs.init(EMAIL_CONFIG.USER_ID);
 };
 
 export const sendEmail = async (params: EmailParams): Promise<boolean> => {
@@ -27,8 +27,7 @@ export const sendEmail = async (params: EmailParams): Promise<boolean> => {
         message: params.message,
         property_id: params.propertyId || 'N/A',
         property_title: params.propertyTitle || 'N/A'
-      },
-      EMAIL_CONFIG.USER_ID
+      }
     );
     
     console.log('Email sent successfully:', response);

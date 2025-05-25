@@ -136,7 +136,7 @@ const PropertyDetails: React.FC<PropertyDetailsProps> = ({ property }) => {
               <p className="text-gray-600 text-sm mb-4">You can also reach us directly:</p>
               <div className="flex items-center">
                 <Mail size={18} className="text-primary-700 mr-2" />
-                <a href="mailto:contact@Apna Ghar.in" className="text-primary-700 hover:underline">contact@Apna Ghar.in</a>
+                <a href="mailto:apnaghardy@gmail.com" className="text-primary-700 hover:underline">apnaghardy@gmail.com</a>
               </div>
             </div>
           </div>

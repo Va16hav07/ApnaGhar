@@ -59,12 +59,6 @@ const Header: React.FC = () => {
             >
               Properties
             </Link>
-            <Link 
-              to="/contact" 
-              className={`text-sm font-medium transition-colors ${isActive('/contact') ? 'text-primary-700' : 'text-gray-600 hover:text-primary-700'}`}
-            >
-              Contact
-            </Link>
           </nav>
         </div>
 
@@ -98,13 +92,6 @@ const Header: React.FC = () => {
               onClick={() => setIsOpen(false)}
             >
               Properties
-            </Link>
-            <Link 
-              to="/contact" 
-              className={`px-4 py-2 rounded-md ${isActive('/contact') ? 'bg-primary-50 text-primary-700' : 'text-gray-600'}`}
-              onClick={() => setIsOpen(false)}
-            >
-              Contact
             </Link>
           </div>
         </div>
