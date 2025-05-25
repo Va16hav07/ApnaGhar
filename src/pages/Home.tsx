@@ -1,7 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import PropertyGrid from '../components/PropertyGrid';
-import Testimonials from '../components/Testimonials';
 import { properties, testimonials } from '../data/properties';
 import { CheckCircle, Home as HomeIcon, Users, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -158,8 +157,6 @@ const HomePage: React.FC = () => {
           </Link>
         </div>
       </section>
-      
-      <Testimonials testimonials={testimonials} />
     </div>
   );
 };
