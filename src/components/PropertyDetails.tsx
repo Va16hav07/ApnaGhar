@@ -94,7 +94,7 @@ const PropertyDetails: React.FC<PropertyDetailsProps> = ({ property }) => {
               <div className="bg-gray-50 p-4 rounded-lg flex flex-col items-center justify-center">
                 <SquareFoot size={24} className="text-primary-700 mb-2" />
                 <span className="text-sm text-gray-600">Area</span>
-                <span className="font-semibold">{property.area} sq.ft</span>
+                <span className="font-semibold">{property.area}</span>
               </div>
             </div>
             

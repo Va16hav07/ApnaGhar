@@ -50,12 +50,16 @@ const Footer: React.FC = () => {
                 </a>
               </li>
             </ul>
-            
+          </div>
+          
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Our Team</h3>
+            <p className="text-gray-400">Developed by team - Siddharth Bellundagi</p>
           </div>
         </div>
         
         <div className="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} Apna Ghar - Initiative by D Y PATIL EDUCATIONAL FEDERATION Students. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Apna Ghar - Team - Siddharth Bellundagi All rights reserved.</p>
         </div>
       </div>
     </footer>
